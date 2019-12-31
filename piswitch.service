@@ -1,0 +1,15 @@
+[Unit]
+Description=piswitch
+After=multi-user.target
+
+[Service]
+ExecStart=/home/pi/data/github.com/claytantor/pi-switch/venv/bin/python -u /home/pi/data/github.com/claytantor/pi-switch/app.py --config /home/pi/data/github.com/claytantor/pi-switch/config.yml
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=piswitch
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,4 @@
+requests==2.21.0
+RPi.GPIO==0.7.0
+PyYAML>=5.1
+pystache==0.5.4
